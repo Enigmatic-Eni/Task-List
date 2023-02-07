@@ -1,0 +1,84 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Kdam+Thmor+Pro&family=Poppins:wght@200;300;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+*{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+width: 100%;
+}
+
+.head{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+.todo-list{
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+.list-head{
+  display: grid;
+  grid-template-columns: 20fr 7fr;
+  gap: 20px;
+}
+.user-input{
+  padding: 9px;
+  border-radius: 4px;
+  font-size: 20px;
+  outline: none;
+}
+.add{
+  border-radius: 4px;
+  font-size: 17px;
+  background-color: rgb(5, 103, 148);
+  border-color: rgb(5, 103, 148);
+  color: #fff;
+  outline: none;
+  opacity: .6;
+  pointer-events: none;
+}
+.add.active{
+  opacity: 2;
+  pointer-events: all;
+}
+.tasks-section{
+  margin-top: 10px;
+}
+.tasks{
+  padding: 0 7px;
+  border-radius: 4px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tasks.completion p{
+  text-decoration: line-through;
+  color: rgba(54, 54, 54, 0.747);
+}
+.tasks p{
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.task-button{
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.task-button i{
+  color: rgb(10, 132, 189);
+  cursor: pointer;
+}
+
